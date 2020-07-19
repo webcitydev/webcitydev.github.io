@@ -1,0 +1,650 @@
+/* ----- Code By Web City Development | Martin Alderson ----- */
+
+/* ---------------------------------------------------------------- */
+
+/* FONTS import */
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@500&display=swap");
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+/* ---------------------------------------------------------------- */
+
+/* NAVBAR Start */
+
+div.content {
+    /* FIXED OVER EVERYTHING */
+    position: fixed;
+    width: 100%;
+    background: rgba(28, 28, 29, 0.9);
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+div.content a img {
+    width: 45px;
+    background: #dae1e7;
+    border-radius: 25px;
+}
+
+.logo {
+    margin: 0 15px;
+}
+
+.logo:hover {
+    cursor: pointer;
+    opacity: 80%;
+}
+
+h3.name {
+    font-family: "ZCOOL QingKe HuangYou", cursive;
+    letter-spacing: 0.2rem;
+    color: #3282b8;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-right: auto;
+    line-height: 18px;
+}
+
+h3.name span {
+    font-family: monospace;
+    letter-spacing: 1px;
+    display: block;
+    font-size: 2px;
+    text-transform: none;
+}
+
+ul.nav li,
+li a {
+    list-style: none;
+    text-decoration: none;
+    color: #dae1e7;
+    display: inline-block;
+    font-family: "Concert One", cursive;
+    letter-spacing: 0.1rem;
+    /* display: none; */
+}
+
+.nav li a {
+    margin: 0 15px;
+}
+.navMobile {
+    display: none;
+}
+
+.nav li a {
+    list-style: none;
+    text-decoration: none;
+    color: #dae1e7;
+    display: inline-block;
+    font-family: "Concert One", cursive;
+    letter-spacing: 0.1rem;
+    /* display: none; */
+}
+ul.navMobile li {
+    list-style: none;
+    text-decoration: none;
+    color: #dae1e7;
+    font-family: "Concert One", cursive;
+    letter-spacing: 0.1rem;
+    text-align: center;
+}
+.nav li a:hover,
+.navMobile li a:hover {
+    color: rgba(218, 225, 231, 0.8);
+}
+
+.nav button.btn-contact {
+    font-family: "Concert One", cursive;
+    font-size: 15px;
+    border: none;
+    background-color: rgba(0, 144, 158, 1);
+    padding: 10px 10px;
+    border-radius: 25px;
+    color: #dae1e7;
+    margin-left: 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.navMobile button.btn-contact {
+    font-family: "Concert One", cursive;
+    font-size: 15px;
+    border: none;
+    background-color: rgba(0, 144, 158, 1);
+    padding: 10px 10px;
+    border-radius: 25px;
+    color: #dae1e7;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+a button:hover {
+    background-color: rgba(0, 144, 158, 0.8);
+    transition: 0.3s ease 0.1s;
+}
+
+.bar {
+    color: #dae1e7;
+    font-size: 30px;
+    line-height: 20px;
+    float: right;
+    display: none;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+/* NAVBAR End */
+
+/* ---------------------------------------------------------------- */
+
+/* BACKGROUND & WELCOME Start */
+
+img.bg-img {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+div.header {
+    font-family: "ZCOOL QingKe HuangYou", cursive;
+    position: absolute;
+    background: rgba(5, 5, 5, 0.805);
+    width: 300px;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: #dae1e7;
+    border-radius: 45px;
+    box-shadow: 7px 7px 5px -3px rgba(0, 0, 0, 0.75);
+}
+
+h1 {
+    padding: 20px;
+}
+
+h1 span {
+    display: block;
+    color: #3282b8;
+}
+
+div.header h3 {
+    padding: 10px 20px;
+    font-family: cursive;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+div.header a button {
+    font-family: "Concert One", cursive;
+    font-size: 15px;
+    border: none;
+    background-color: rgba(0, 144, 158, 1);
+    padding: 10px 10px;
+    border-radius: 25px;
+    color: #dae1e7;
+    margin: 0 0 25px 0;
+    cursor: pointer;
+}
+
+div.header a button:hover {
+    background-color: rgba(0, 144, 158, 0.8);
+    transition: 0.3s ease 0.1s;
+}
+
+/* BACKGROUND & WELCOME End */
+
+/* ---------------------------------------------------------------- */
+
+/* ABOUT SECTION Start */
+
+section.about {
+    font-family: "Concert One", cursive;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #dae1e7;
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+}
+
+div.about {
+    text-align: center;
+    background: rgba(28, 28, 29, 1);
+    color: #fff;
+    border-radius: 25px;
+    width: 95%;
+    height: auto;
+    box-shadow: 7px 7px 5px -3px rgba(0, 0, 0, 0.75);
+}
+
+div.about h2 {
+    color: rgba(0, 144, 158, 1);
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-bottom: 25px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.75);
+}
+
+.about p {
+    font-family: "Baloo Da 2", cursive;
+    font-size: 20px;
+    padding: 0 8px;
+    line-height: 1.5em;
+    margin-bottom: 15px;
+    cursor: default;
+    line-height: 1.8em;
+}
+
+.about p span {
+    color: #3282b8;
+}
+
+.btn-serv {
+    font-family: "Concert One", cursive;
+    font-size: 15px;
+    border: none;
+    text-transform: uppercase;
+    background-color: rgba(0, 144, 158, 1);
+    padding: 10px 10px;
+    border-radius: 25px;
+    color: #dae1e7;
+    margin: 0 0 25px 0;
+    cursor: pointer;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.75);
+}
+
+.btn-serv:hover {
+    background-color: rgba(0, 144, 158, 0.8);
+    transition: 0.3s ease 0.1s;
+}
+
+/* ABOUT SECTION End */
+
+/* ---------------------------------------------------------------- */
+
+/* SERVICES SECTION Start */
+
+section.services {
+    position: relative;
+    top: 0;
+    left: 0;
+    background: rgba(28, 28, 29, 1);
+    width: 100%;
+    padding: 85px 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 95%;
+    font-family: "Concert One", cursive;
+    height: auto;
+    background: url(./img/bg.jpg) no-repeat;
+    background-size: cover;
+    text-align: center;
+    border-radius: 25px;
+    box-shadow: 7px 7px 5px -3px rgba(0, 0, 0, 0.75);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-column-gap: 20px;
+    justify-items: center;
+}
+
+.container h1,
+.container2 h1,
+footer h1 {
+    color: rgba(0, 144, 158, 1);
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.75);
+}
+.servs,
+.members {
+    margin: 20px 0px;
+    font-family: "Baloo Da 2", cursive;
+    width: 350px;
+    height: 460px;
+    background: rgba(31, 31, 31, 0.85);
+    border-radius: 25px;
+    color: #fff;
+    box-shadow: 7px 7px 5px -3px rgba(0, 0, 0, 0.75);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.servs:nth-child(even) {
+    background: rgba(3, 3, 3, 0.9);
+}
+.servs h3 {
+    margin-top: 15px;
+    font-size: 22px;
+}
+div.icon {
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+div.icon img {
+    width: 85px;
+    height: auto;
+    filter: invert(100%);
+}
+
+.servs h4 {
+    font-weight: 200;
+}
+ul.serving,
+ul.mems {
+    margin-top: 15px;
+    text-align: left;
+    font-family: "Baloo Da 2", cursive;
+}
+
+.grid button {
+    box-shadow: none;
+}
+.servs a {
+    margin-top: auto;
+}
+/* SERVICES SECTION End */
+
+/* ---------------------------------------------------------------- */
+
+/* TEAM SECTION Start */
+
+section.team {
+    position: relative;
+    top: 0;
+    left: 0;
+    background: #dae1e7;
+    width: 100%;
+    padding: 85px 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container2 {
+    width: 95%;
+    font-family: "Concert One", cursive;
+    height: auto;
+    background: rgba(28, 28, 29, 1);
+    background-size: cover;
+    text-align: center;
+    border-radius: 25px;
+    box-shadow: 7px 7px 5px -3px rgba(0, 0, 0, 0.75);
+}
+
+.grid2 {
+    display: flex;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-column-gap: 20px;
+    /* justify-items: center; */
+    justify-content: center;
+}
+
+div.members {
+    background: rgba(218, 225, 231, 0.8);
+    color: #000;
+    height: auto;
+}
+.members h3 {
+    margin-top: 15px;
+    font-size: 22px;
+}
+
+div.members .pics {
+    margin-top: 15px;
+}
+div.members .pics img {
+    filter: saturate(170%);
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+}
+
+div.social {
+    margin-top: auto;
+    display: none;
+}
+ul.mems {
+    list-style-type: circle;
+    margin: 35px 0;
+}
+
+/* TEAM SECTION End */
+
+/* ---------------------------------------------------------------- */
+
+/* FOOTER SECTION Start */
+
+footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    font-family: "Concert One", cursive;
+    background: rgba(28, 28, 29, 1);
+    top: 0;
+    left: 0;
+    color: #dae1e7;
+    text-align: center;
+}
+
+img.socialMedia {
+    width: 32px;
+    filter: invert(100%);
+    margin: 25px 15px 0px 15px;
+}
+
+img.socialMedia:hover {
+    opacity: 60%;
+}
+
+h4.copyright {
+    font-family: "Baloo Da 2", cursive;
+    padding-top: 5px;
+    font-weight: 200;
+    font-size: 14px;
+}
+
+footer h4 {
+    color: #dae1e7;
+    font-family: "Baloo Da 2", cursive;
+    font-weight: 200;
+}
+.btn-signUp {
+    font-family: "Concert One", cursive;
+    font-size: 16px;
+    border: none;
+    text-transform: uppercase;
+    background-color: rgba(0, 144, 158, 1);
+    padding: 12px 46px;
+    border-radius: 25px;
+    color: #dae1e7;
+    margin: 0 0 25px 0;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
+}
+.btn-signUp:hover {
+    background-color: rgba(0, 144, 158, 0.7);
+    transition: 0.3s ease 0.1s;
+}
+/* FOOTER SECTION End */
+
+/* ---------------------------------------------------------------- */
+
+/* MEDIA SCREEN Start */
+
+@media only screen and (max-width: 768px) {
+    .nav {
+        display: none;
+    }
+    .bar {
+        display: block;
+    }
+    .navMobile {
+        position: fixed;
+        top: 55px;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        background: rgba(28, 28, 29, 1);
+        display: block;
+        text-align: center;
+        z-index: 2;
+        transition: all 0.5;
+    }
+    .navMobile li {
+        display: block;
+        margin: 25px 0;
+        line-height: 20px;
+    }
+    ul#navbar.show {
+        left: 0;
+        transition: 0.5s;
+    }
+    div.header a button {
+        font-size: 14px;
+    }
+    .grid {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+    .servs,
+    .members {
+        margin: 20px auto;
+        width: 270px;
+        height: auto;
+    }
+    div.header {
+        width: 70%;
+    }
+    div.header h1 {
+        font-size: 1.7em;
+    }
+    div.header h3 {
+        font-size: 1rem;
+    }
+    div.about h2 {
+        font-size: 32px;
+    }
+    .about p {
+        font-size: 15px;
+        padding: 4px;
+    }
+    h3.name {
+        font-size: 14px;
+    }
+    h3.name span {
+        font-size: 5px;
+    }
+    .container h1,
+    .container2 h1,
+    footer h1 {
+        font-size: 32px;
+    }
+    footer h4 {
+        font-size: 0.1em;
+    }
+    ul.mems {
+        margin: 35px 0;
+        font-size: 16px;
+    }
+    h4.copyright {
+        font-family: "Baloo Da 2", cursive;
+        padding-top: 5px;
+        font-weight: 200;
+        font-size: 0.5em;
+    }
+    img.socialMedia {
+        width: 22px;
+        filter: invert(100%);
+        margin: 15px 10px 0px 10px;
+    }
+    .btn-serv {
+        margin-top: 12px;
+    }
+    .btn-signUp {
+        font-size: 14px;
+        padding: 12px 30px;
+        margin: 0 5px 25px 5px;
+    }
+}
+@media only screen and (max-width: 295px) {
+    .servs,
+    .members {
+        margin: 20px auto;
+        width: 200px;
+        height: auto;
+    }
+
+    div.members .pics img {
+        width: 120px;
+        height: auto;
+    }
+    .members h3 {
+        font-size: 18px;
+    }
+    ul.mems {
+        margin: 15px 0 35px 0;
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .members h4 {
+        font-size: small;
+    }
+    ul.serving {
+        font-size: 10px;
+    }
+    div.icon img {
+        width: 65px;
+    }
+    .servs h3 {
+        margin-top: 15px;
+        font-size: 18px;
+    }
+    .btn-serv {
+        font-size: 12px;
+        margin-top: 12px;
+    }
+    .btn-signUp {
+        font-size: 10px;
+        padding: 12px 20px;
+        margin: 0 5px 25px 5px;
+    }
+}
+/* ----- END OF CSS ----- */
+
+/* ----- COPYRIGHT: Code By Web City Development | Martin Alderson | 07/2020 ----- */
