@@ -185,7 +185,7 @@ h1 span {
 
 div.header h3 {
     padding: 10px 20px;
-    font-family: cursive;
+    font-family: "Concert One", cursive;
     font-size: 18px;
     margin-bottom: 15px;
 }
@@ -576,7 +576,7 @@ footer h4 {
         font-size: 32px;
     }
     footer h4 {
-        font-size: 0.1em;
+        font-size: 12px;
     }
     ul.mems {
         margin: 35px 0;
@@ -590,7 +590,6 @@ footer h4 {
     }
     img.socialMedia {
         width: 22px;
-        filter: invert(100%);
         margin: 15px 10px 0px 10px;
     }
     .btn-serv {
