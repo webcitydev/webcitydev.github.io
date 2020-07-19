@@ -58,7 +58,7 @@ h3.name span {
     font-family: monospace;
     letter-spacing: 1px;
     display: block;
-    font-size: 2px;
+    font-size: 12px;
     text-transform: none;
 }
 
@@ -556,6 +556,7 @@ footer h4 {
     }
     div.header h3 {
         font-size: 1rem;
+        font-family: monospace;
     }
     div.about h2 {
         font-size: 32px;
@@ -568,7 +569,7 @@ footer h4 {
         font-size: 14px;
     }
     h3.name span {
-        font-size: 5px;
+        font-size: 11px;
     }
     .container h1,
     .container2 h1,
@@ -576,7 +577,7 @@ footer h4 {
         font-size: 32px;
     }
     footer h4 {
-        font-size: 12px;
+        font-size: 14px;
     }
     ul.mems {
         margin: 35px 0;
